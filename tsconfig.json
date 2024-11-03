@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./js",
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": ["./*.ts"]
+}
