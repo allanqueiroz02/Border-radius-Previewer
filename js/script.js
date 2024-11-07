@@ -1,10 +1,15 @@
 "use strict";
-console.log("Carregou script");
 const textSheet = document.querySelector(".borders");
+const inputBorder = document.querySelector("#input-border");
 const copyToClip = document.querySelector(".copy-clipboard");
-if (copyToClip)
-    copyToClip.addEventListener("click", (event) => {
-        const copyText = textSheet?.textContent || "";
-        navigator.clipboard.writeText(copyText);
-        alert("Copiou legal dog");
-    });
+textSheet?.addEventListener("click", (event) => {
+    textSheet.innerText = "";
+});
+inputBorder.addEventListener("keydown", (event) => {
+    // textSheet.style.borderRadius = event.key + "px";
+    console.log(event);
+});
+copyToClip?.addEventListener("click", (event) => {
+    const copyText = inputBorder.value || "";
+    navigator.clipboard.writeText(copyText);
+});

@@ -13,6 +13,12 @@ body {
   background: var(--bg-lighter);
 }
 
+input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.3rem;
+}
+
 .container {
   max-width: 650px;
   margin: 0 auto;
@@ -25,9 +31,18 @@ body {
   background: var(--bg-div);
   margin: auto 0;
   font-size: 1.5rem;
-  width: 300px;
-  height: 300px;
+  width: 650px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copy-clipboard {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 12px 16px;
+}
+.copy-clipboard:hover {
+  cursor: pointer;
 }
