@@ -1,15 +1,12 @@
 "use strict";
-const textSheet = document.querySelector(".borders");
-const inputBorder = document.querySelector("#input-border");
+const textSheet = document.querySelector(".my-square");
+const inputBorderRadius = document.querySelector(".input-border");
 const copyToClip = document.querySelector(".copy-clipboard");
-textSheet?.addEventListener("click", (event) => {
-    textSheet.innerText = "";
-});
-inputBorder.addEventListener("keydown", (event) => {
-    // textSheet.style.borderRadius = event.key + "px";
-    console.log(event);
+inputBorderRadius.addEventListener("keyup", (event) => {
+    textSheet.style.borderRadius = inputBorderRadius.value;
+    textSheet.style.transition = 'border-radius 0.7s';
 });
 copyToClip?.addEventListener("click", (event) => {
-    const copyText = inputBorder.value || "";
+    const copyText = inputBorderRadius.value || "";
     navigator.clipboard.writeText(copyText);
 });
