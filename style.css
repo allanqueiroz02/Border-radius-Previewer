@@ -39,6 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .interactions {
@@ -65,11 +66,32 @@ body {
   cursor: pointer;
 }
 
-.toast {
-  min-width: 250px;
-  background: var(--grey);
-  color: var(--light);
+.warning-copied {
+  padding: 2px 20px;
+  background-color: #4caf50;
+  position: absolute;
+  top: 10px;
+  right: -150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.warning-copied p {
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
-  padding-inline: 15px;
-  border-radius: 2px;
+  color: var(--light);
+}
+
+.warning-copied.show {
+  animation: 1.5s linear showToast;
+}
+
+@keyframes showToast {
+  from {
+    right: -150px;
+  }
+  to {
+    right: 50px;
+  }
 }
