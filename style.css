@@ -16,6 +16,7 @@
 body {
   font-family: Inter, sans-serif;
   background: linear-gradient(to right, #085078, #85d8ce);
+  overflow-x: hidden;
 }
 
 .container {
@@ -70,6 +71,7 @@ body {
   padding: 2px 20px;
   background-color: #4caf50;
   position: absolute;
+  display: none;
   top: 10px;
   right: -150px;
   border-radius: 5px;
@@ -84,7 +86,8 @@ body {
 }
 
 .warning-copied.show {
-  animation: 1.5s linear showToast;
+  display: block;
+  animation: 1.3s linear showToast;
 }
 
 @keyframes showToast {
