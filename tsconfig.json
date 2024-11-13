@@ -6,7 +6,10 @@
     "allowJs": true,
     "esModuleInterop": true,
     "strict": true,
-    "lib": ["dom", "dom.iterable", "esnext"]
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
+    "types": ["jest"]
   },
-  "include": ["./*.ts"]
+  "include": ["./script.ts"],
+  "exclude": ["node_modules"]
 }
