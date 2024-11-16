@@ -43,5 +43,6 @@ const config: Config = {
     "!src/**/__tests__/*",
   ],
   coverageReporters: ["html", "text", "text-summary", "cobertura", "json"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 };
 export default config;
