@@ -10,5 +10,5 @@ This project is based on [App Ideas Collection](https://github.com/florinpop17/a
 
 ## Bonus
 
-- [ ] User can change all 8 possible values of the border-radius in order to create a complex shape.
-- [] Unit tests to test html and js files.
+- [] User can change all 8 possible values of the border-radius in order to create a complex shape.
+- [x] Unit tests to test html and js files. It's inspired by this [article](https://dev.to/thawkin3/how-to-unit-test-html-and-vanilla-javascript-without-a-ui-framework-4io).
